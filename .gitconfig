@@ -1,0 +1,8 @@
+[user]
+	name = Araslanov
+	email = araslanov_e_i@list.ru
+[color]
+	ui = true
+[alias]
+	subtree = subtree
+	sbt = subtree
