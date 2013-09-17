@@ -8,7 +8,6 @@ call vundle#rc()
 
 Bundle 'scrooloose/nerdtree'
 
-
 " appearance
 syntax on
 
@@ -32,3 +31,10 @@ nmap <D-Right> <C-w>l
 nmap <D-Left> <C-w>h
 nmap <D-Up> <C-w>k
 nmap <D-Down> <C-w>j
+
+" settings
+set clipboard=unnamed
+set noswapfile
+set nowritebackup
+set nobackup
+set number
