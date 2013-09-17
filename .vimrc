@@ -33,6 +33,7 @@ nmap <D-Up> <C-w>k
 nmap <D-Down> <C-w>j
 
 " settings
+"
 set clipboard=unnamed
 set noswapfile
 set nowritebackup
