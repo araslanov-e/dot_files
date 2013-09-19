@@ -7,6 +7,9 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+Bundle '907th/vim-auto-save'
+Bundle 'inkarkat/nerdcommenter'
 
 " appearance
 syntax on
@@ -32,9 +35,16 @@ nmap <D-Left> <C-w>h
 nmap <D-Up> <C-w>k
 nmap <D-Down> <C-w>j
 
+map <D-]> <plug>NERDCommenterToggle
+
 " settings
 set clipboard=unnamed
 set noswapfile
 set nowritebackup
 set nobackup
 set number
+
+" plugon setup
+let g:ctrlp_switch_buffer = ''
+let g:ctrlp_custom_ignore = '\v[\/]tmp$'
+let g:ctrlp_max_files = 0 

@@ -6,3 +6,4 @@
 [alias]
 	subtree = subtree
 	sbt = subtree
+[push]
