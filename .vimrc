@@ -10,6 +10,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle '907th/vim-auto-save'
 Bundle 'inkarkat/nerdcommenter'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-haml'
 
 " appearance
 syntax on
@@ -34,6 +36,7 @@ nmap <D-Right> <C-w>l
 nmap <D-Left> <C-w>h
 nmap <D-Up> <C-w>k
 nmap <D-Down> <C-w>j
+nmap <C-d> mzyyp`z
 
 map <D-]> <plug>NERDCommenterToggle
 
@@ -43,6 +46,7 @@ set noswapfile
 set nowritebackup
 set nobackup
 set number
+"set relativenumber
 
 " plugon setup
 let g:ctrlp_switch_buffer = ''
