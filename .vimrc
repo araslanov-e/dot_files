@@ -8,6 +8,7 @@ call vundle#rc()
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
+Bundle 'mileszs/ack.vim'
 Bundle '907th/vim-auto-save'
 Bundle 'inkarkat/nerdcommenter'
 Bundle 'tpope/vim-rails'
