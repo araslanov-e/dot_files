@@ -1,4 +1,3 @@
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 SSH_ENV=$HOME/.ssh/environment
 
@@ -32,3 +31,15 @@ if [ -f "${SSH_ENV}" ]; then
 else
   start_agent;
 fi
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# ENV
+export PAGER=less
+export EDITOR=vim
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+bind -r '\C-s'
+stty -ixon

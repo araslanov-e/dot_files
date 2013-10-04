@@ -13,6 +13,7 @@ Bundle '907th/vim-auto-save'
 Bundle 'inkarkat/nerdcommenter'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
+Bundle 'kchmck/vim-coffee-script'
 
 " appearance
 syntax on
@@ -38,6 +39,8 @@ nmap <D-Left> <C-w>h
 nmap <D-Up> <C-w>k
 nmap <D-Down> <C-w>j
 nmap <C-d> mzyyp`z
+nmap <C-s> :w<CR>
+imap <C-s> <Esc>:w<CR>a
 
 map <D-]> <plug>NERDCommenterToggle
 
@@ -47,7 +50,7 @@ set noswapfile
 set nowritebackup
 set nobackup
 set number
-"set relativenumber
+set relativenumber
 
 " plugon setup
 let g:ctrlp_switch_buffer = ''
