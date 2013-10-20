@@ -34,12 +34,12 @@ endif
 
 nmap <Space> :
 
-# Mac
+" Mac
 nmap <D-Right> <C-w>l
 nmap <D-Left> <C-w>h
 nmap <D-Up> <C-w>k
 nmap <D-Down> <C-w>j
-# Linux
+" Linux
 nmap <M-Right> <C-w><Right>
 nmap <M-Left> <C-w><Left>
 nmap <M-Up> <C-w><Up>
