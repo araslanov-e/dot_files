@@ -41,5 +41,6 @@ export EDITOR=vim
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+# Save
 bind -r '\C-s'
 stty -ixon

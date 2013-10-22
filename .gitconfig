@@ -7,3 +7,5 @@
 	subtree = subtree
 	sbt = subtree
 [push]
+[push]
+	default = simple
