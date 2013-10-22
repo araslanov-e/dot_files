@@ -1,5 +1,5 @@
 [user]
-	name = Araslanov
+	name = araslanov_e
 	email = araslanov_e_i@list.ru
 [color]
 	ui = true
@@ -7,5 +7,6 @@
 	subtree = subtree
 	sbt = subtree
 [push]
-[push]
 	default = simple
+[core]
+	editor = vim

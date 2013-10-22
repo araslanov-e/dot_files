@@ -11,6 +11,7 @@ alias l='ls -CF'
 
 # cd aliases
 alias cdb='cd ..'
+alias cdh='cd ~'
 
 # start the ssh-agent
 function start_agent {
