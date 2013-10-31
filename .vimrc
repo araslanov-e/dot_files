@@ -15,6 +15,8 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'godlygeek/csapprox'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'msanders/snipmate.vim'
 
 " appearance
 syntax on
