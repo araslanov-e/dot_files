@@ -14,10 +14,13 @@ Bundle 'inkarkat/nerdcommenter'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-haml'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'godlygeek/csapprox'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'msanders/snipmate.vim'
 
 " appearance
 syntax on
-
+colorscheme railscasts-csapprox
 
 " filetypes
 filetype plugin indent on
@@ -60,7 +63,7 @@ set nobackup
 set number
 set relativenumber
 
-" plugon setup
+" plugin setup
 let g:ctrlp_switch_buffer = ''
 let g:ctrlp_custom_ignore = '\v[\/]tmp$'
 let g:ctrlp_max_files = 0 

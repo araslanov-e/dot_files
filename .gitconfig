@@ -7,5 +7,6 @@
 	subtree = subtree
 	sbt = subtree
 [push]
+	default = simple
 [core]
 	editor = vim
