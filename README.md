@@ -13,6 +13,7 @@ ln -s ~/.dot_files/.gitconfig ~/.gitconfig
 ln -s ~/.dot_files/.vim ~/.vim
 ln -s ~/.dot_files/.vimrc ~/.vimrc
 ln -s ~/.dot_files/.ackrc ~/.ackrc
+ln -s ~/.dot_files/.gemrc ~/.gemrc
 
 # добавляем в .bash_profile
 if [ -f ~/.bashrc ]; 
