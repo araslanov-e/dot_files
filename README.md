@@ -14,6 +14,7 @@ ln -s ~/.dot_files/.vim ~/.vim
 ln -s ~/.dot_files/.vimrc ~/.vimrc
 ln -s ~/.dot_files/.ackrc ~/.ackrc
 ln -s ~/.dot_files/.gemrc ~/.gemrc
+ln -s ~/.dot_files/.tmux.conf ~/.tmux.conf
 
 # добавляем в .bash_profile
 if [ -f ~/.bashrc ]; 
