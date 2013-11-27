@@ -20,7 +20,13 @@ Bundle 'msanders/snipmate.vim'
 
 " appearance
 syntax on
-colorscheme railscasts-csapprox
+
+" calorscheme
+if has('gui_running')
+  colorscheme railscasts
+else
+  colorscheme railscasts-csapprox
+endif
 
 " filetypes
 filetype plugin indent on
