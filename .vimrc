@@ -17,6 +17,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'godlygeek/csapprox'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'msanders/snipmate.vim'
+Bundle 'Lokaltog/vim-easymotion'
 
 " appearance
 syntax on
