@@ -74,3 +74,39 @@ set relativenumber
 let g:ctrlp_switch_buffer = ''
 let g:ctrlp_custom_ignore = '\v[\/]tmp$'
 let g:ctrlp_max_files = 0 
+
+function DeleteBlankLines()
+ruby <<EOF
+  bc = Vim::Buffer.current
+  lines = bc.count
+  step = 0
+  #lines.downto(1).each do |line|
+  (1..lines).each do |line|
+    line += step
+    if /\S/ !~ bc[line]
+      puts "delete #{line} line"
+      bc.delete(line)
+      step -= 1
+    end
+  end
+  puts 'All blank lines delete'
+EOF
+endfunction
+
+function DeleteDublicateLines()
+ruby << EOF
+  bc = Vim::Buffer.current
+  (1..bc.count/2).each do |line|
+    next if /\S/ !~ bc[line]
+    step = 0
+    (line+1..bc.count).each do |l|
+      l += step
+      if bc[line] == bc[l]
+        puts "delete #{l}('#{bc[l]}') line, dublicate by '#{bc[line]}'"
+        bc.delete(l) 
+        step -= 1
+      end
+    end
+  end
+EOF
+endfunction
