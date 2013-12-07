@@ -5,9 +5,9 @@ SSH_ENV=$HOME/.ssh/environment
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alF --color'
+alias la='ls -A --color'
+alias l='ls -CF --color'
 
 # cd aliases
 alias cdb='cd ..'
