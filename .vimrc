@@ -18,6 +18,8 @@ Bundle 'godlygeek/csapprox'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'msanders/snipmate.vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'lucapette/vim-ruby-doc'
+Bundle 'dockyard/vim-easydir'
 
 " appearance
 syntax on
@@ -75,6 +77,8 @@ let g:ctrlp_switch_buffer = ''
 let g:ctrlp_custom_ignore = '\v[\/]tmp$'
 let g:ctrlp_max_files = 0 
 
+let g:ruby_doc_command='open'
+
 function DeleteBlankLines()
 ruby <<EOF
   bc = Vim::Buffer.current
@@ -96,16 +100,19 @@ endfunction
 function DeleteDublicateLines()
 ruby << EOF
   bc = Vim::Buffer.current
-  (1..bc.count/2).each do |line|
+  (1..bc.count).each do |line|
     next if /\S/ !~ bc[line]
     step = 0
-    (line+1..bc.count).each do |l|
+    under_line = line + 1
+    (under_line..bc.count).each do |l|
+      puts "line #{l} for #{line}"
       l += step
       if bc[line] == bc[l]
         puts "delete #{l}('#{bc[l]}') line, dublicate by '#{bc[line]}'"
         bc.delete(l) 
         step -= 1
       end
+      break if under_line > bc.count
     end
   end
 EOF
