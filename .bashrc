@@ -4,6 +4,9 @@ SSH_ENV=$HOME/.ssh/environment
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# GO
+export PATH=$PATH:/usr/local/go/bin
+
 # some more ls aliases
 alias ll='ls -alF -color'
 alias la='ls -A -color'
