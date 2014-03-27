@@ -20,6 +20,8 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'lucapette/vim-ruby-doc'
 Bundle 'dockyard/vim-easydir'
+Bundle "JulesWang/css.vim"
+Bundle "henrik/vim-indexed-search"
 
 " appearance
 syntax on
