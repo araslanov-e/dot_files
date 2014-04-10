@@ -2,7 +2,7 @@
 
 ```terminal
 # загрузка файлов
-git clone git://github.com/smartjeck/dot_files ~/.dot_files
+git clone git://github.com/araslanov-e/dot_files ~/.dot_files
 
 # установка vundle для установки плагинов vim
 git clone https://github.com/gmarik/vundle.git ~/.dot_files/.vim/bundle/vundle
