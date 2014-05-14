@@ -22,6 +22,7 @@ Bundle 'lucapette/vim-ruby-doc'
 Bundle 'dockyard/vim-easydir'
 Bundle "JulesWang/css.vim"
 Bundle "henrik/vim-indexed-search"
+Bundle "nathanaelkane/vim-indent-guides"
 
 " appearance
 syntax on
@@ -78,6 +79,12 @@ set relativenumber
 let g:ctrlp_switch_buffer = ''
 let g:ctrlp_custom_ignore = '\v[\/]tmp$'
 let g:ctrlp_max_files = 0 
+
+" - vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#333333 ctermbg=black
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#222222 ctermbg=darkgrey
 
 let g:ruby_doc_command='open'
 
