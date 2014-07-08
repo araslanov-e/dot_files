@@ -28,6 +28,7 @@ Bundle "nathanaelkane/vim-indent-guides"
 syntax on
 
 " calorscheme
+set t_Co=256
 if has('gui_running')
   colorscheme railscasts
 else
