@@ -46,6 +46,7 @@ set shiftwidth=2
 " key mappings
 if has("gui_macvim")
   let macvim_skip_cmd_opt_movement = 1
+  let g:ruby_doc_command='open'
 endif
 
 nmap <Space> :
@@ -86,8 +87,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#333333 ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#222222 ctermbg=darkgrey
-
-let g:ruby_doc_command='open'
 
 function DeleteBlankLines()
 ruby <<EOF
