@@ -15,8 +15,9 @@
 Создание символических ссылок
     
     $ ln -s ~/.dot_files/.bashrc ~/.bashrc
+    $ ln -s ~/.dot_files/bash ~/.bash
     $ ln -s ~/.dot_files/.gitconfig ~/.gitconfig
-    $ ln -s ~/.dot_files/.vim ~/.vim
+    $ ln -s ~/.dot_files/vim ~/.vim
     $ ln -s ~/.dot_files/.vimrc ~/.vimrc
     $ ln -s ~/.dot_files/.ackrc ~/.ackrc
     $ ln -s ~/.dot_files/.gemrc ~/.gemrc

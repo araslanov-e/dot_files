@@ -1,6 +1,11 @@
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 SSH_ENV=$HOME/.ssh/environment
 
+# load custom executable functions
+for function in ~/.bash/*; do
+  source $function
+done
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
