@@ -23,6 +23,8 @@ Bundle 'dockyard/vim-easydir'
 Bundle "JulesWang/css.vim"
 Bundle "henrik/vim-indexed-search"
 Bundle "nathanaelkane/vim-indent-guides"
+Bundle "pangloss/vim-javascript"
+Bundle "briancollins/vim-jst"
 
 " appearance
 syntax on
