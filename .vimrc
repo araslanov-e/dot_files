@@ -90,6 +90,9 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#333333 ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#222222 ctermbg=darkgrey
 
+" Press F4 to toggle highlighting on/off, and show current value.
+:noremap <F4> :set hlsearch! hlsearch?<CR>
+
 function DeleteBlankLines()
 ruby <<EOF
   bc = Vim::Buffer.current

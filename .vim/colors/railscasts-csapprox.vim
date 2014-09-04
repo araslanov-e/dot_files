@@ -57,7 +57,7 @@ elseif has("gui_running") || (&t_Co == 256 && (&term ==# "xterm" || &term =~# "^
     CSAHi Directory term=bold cterm=NONE ctermbg=bg ctermfg=150 gui=NONE guibg=bg guifg=#a5c160
     CSAHi ErrorMsg term=NONE cterm=NONE ctermbg=196 ctermfg=231 gui=NONE guibg=#ff0000 guifg=#ffffff
     CSAHi IncSearch term=reverse cterm=reverse ctermbg=bg ctermfg=fg gui=reverse guibg=bg guifg=fg
-    CSAHi Search term=reverse cterm=NONE ctermbg=233 ctermfg=fg gui=NONE guibg=#131313 guifg=fg
+    CSAHi Search term=reverse cterm=NONE ctermbg=233 ctermfg=fg gui=NONE guibg=#555555 guifg=fg
     CSAHi MoreMsg term=bold cterm=bold ctermbg=bg ctermfg=72 gui=bold guibg=bg guifg=#2e8b57
     CSAHi ModeMsg term=bold cterm=bold ctermbg=bg ctermfg=fg gui=bold guibg=bg guifg=fg
     CSAHi LineNr term=underline cterm=NONE ctermbg=bg ctermfg=102 gui=NONE guibg=bg guifg=#666666
