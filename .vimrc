@@ -25,6 +25,7 @@ Bundle "henrik/vim-indexed-search"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "pangloss/vim-javascript"
 Bundle "briancollins/vim-jst"
+Bundle 'slim-template/vim-slim.git'
 
 " appearance
 syntax on
