@@ -6,6 +6,8 @@
 [alias]
 	subtree = subtree
 	sbt = subtree
+[pull]
+  rebase = true
 [push]
 	default = simple
 [core]
