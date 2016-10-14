@@ -27,6 +27,12 @@ Bundle "pangloss/vim-javascript"
 Bundle "briancollins/vim-jst"
 Bundle 'slim-template/vim-slim.git'
 Bundle 'groenewege/vim-less'
+Bundle 'chiedojohn/vim-case-convert'
+Bundle 'tpope/vim-fugitive'
+
+" Elixir
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'avdgaag/vim-phoenix'
 
 " appearance
 syntax on
