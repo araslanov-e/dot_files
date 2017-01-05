@@ -29,6 +29,7 @@ Bundle 'slim-template/vim-slim.git'
 Bundle 'groenewege/vim-less'
 Bundle 'chiedojohn/vim-case-convert'
 Bundle 'tpope/vim-fugitive'
+Bundle 'janko-m/vim-test'
 
 " Elixir
 Bundle 'elixir-lang/vim-elixir'
