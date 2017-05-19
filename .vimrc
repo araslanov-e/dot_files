@@ -30,6 +30,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'chiedojohn/vim-case-convert'
 Bundle 'tpope/vim-fugitive'
 Bundle 'janko-m/vim-test'
+Bundle 'jwhitley/vim-matchit'
 
 " Elixir
 Bundle 'elixir-lang/vim-elixir'
