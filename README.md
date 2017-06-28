@@ -10,7 +10,7 @@
 
 Установка vundle для установки плагинов vim
 
-    $ git clone https://github.com/gmarik/vundle.git ~/.dot_files/.vim/bundle/vundle
+    $ git clone https://github.com/gmarik/vundle.git ~/.dot_files/vim/bundle/vundle
 
 Создание символических ссылок
     
@@ -30,3 +30,12 @@
     then 
       source ~/.bashrc 
     fi
+
+
+# 
+https://github.com/tmuxinator/tmuxinator
+https://github.com/rtomayko/git-sh
+
+# mysql
+	sudo apt-get install libmysqlclient-dev
+	gem install mysql2
