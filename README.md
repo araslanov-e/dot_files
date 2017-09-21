@@ -16,6 +16,9 @@
     
     $ ln -s ~/.dot_files/.bashrc ~/.bashrc
     $ ln -s ~/.dot_files/bash ~/.bash
+    or
+    $ ln -s ~/.dot_files/.zshrc ~/.zshrc
+
     $ ln -s ~/.dot_files/.gitconfig ~/.gitconfig
     $ ln -s ~/.dot_files/vim ~/.vim
     $ ln -s ~/.dot_files/.vimrc ~/.vimrc
@@ -33,8 +36,9 @@
 
 
 # 
-https://github.com/tmuxinator/tmuxinator
-https://github.com/rtomayko/git-sh
+  https://github.com/robbyrussell/oh-my-zsh
+  https://github.com/tmuxinator/tmuxinator
+  https://github.com/rtomayko/git-sh
 
 # mysql
 	sudo apt-get install libmysqlclient-dev
