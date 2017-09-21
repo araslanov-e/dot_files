@@ -35,9 +35,12 @@
     fi
 
 
-# 
+# Links
+
   https://github.com/robbyrussell/oh-my-zsh
+  
   https://github.com/tmuxinator/tmuxinator
+  
   https://github.com/rtomayko/git-sh
 
 # mysql
