@@ -31,6 +31,8 @@ Bundle 'chiedojohn/vim-case-convert'
 Bundle 'tpope/vim-fugitive'
 Bundle 'janko-m/vim-test'
 Bundle 'jwhitley/vim-matchit'
+Bundle 'vim-syntastic/syntastic'
+Bundle 'joker1007/vim-ruby-heredoc-syntax'
 
 " Elixir
 Bundle 'elixir-lang/vim-elixir'
@@ -93,6 +95,16 @@ set relativenumber
 let g:ctrlp_switch_buffer = ''
 let g:ctrlp_custom_ignore = '\v[\/]tmp$'
 let g:ctrlp_max_files = 0 
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " - vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
