@@ -42,6 +42,8 @@
   https://github.com/tmuxinator/tmuxinator
   
   https://github.com/rtomayko/git-sh
+  
+  https://rvm.io
 
 # mysql
 	sudo apt-get install libmysqlclient-dev
