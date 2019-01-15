@@ -7,6 +7,7 @@
 Установка дополнительных пакетов в систему
 
     $ sudo apt-get install ack-grep
+    $ sudo apt-get install libpq-dev
 
 Установка vundle для установки плагинов vim
 
