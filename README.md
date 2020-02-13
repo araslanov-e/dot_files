@@ -2,7 +2,7 @@
 
 Загрузка файлов
 
-    $ git clone git://github.com/araslanov-e/dot_files ~/.dot_files
+    $ git clone git@github.com:araslanov-e/dot_files.git ~/.dot_files
 
 Установка дополнительных пакетов в систему
 

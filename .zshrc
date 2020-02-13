@@ -91,6 +91,7 @@ source ~/.tmuxinator.zsh
 
 # Aliases
 alias ll='ls -alF -color'
+alias xcc='xclip -selection clipboard'
 
 export EDITOR=vim
 
@@ -100,3 +101,28 @@ export EDITOR=vim
 #eval "$(rbenv init -)"
 
 export PATH=$PATH:/usr/local/go/bin
+source <(kubectl completion zsh)
+
+# kubectlo
+alias kpods='kubectl get pods'
+alias kexec='kubectl exec -it'
+alias kcontexts='kubectl config get-contexts'
+alias kuse='kubectl config use-context'
+kconnect () {
+  kuse $1 && kexec $(echo -n $(kpods | grep $2 | head -1 | sed 's/\s.*//g')) bash
+}
+kconsole() {
+  kuse $1 && kexec $(echo -n $(kpods | grep $2 | head -1 | sed 's/\s.*//g')) bundle exec rails c
+}
+kirb() {
+  kuse $1 && kexec $(echo -n $(kpods | grep $2 | head -1 | sed 's/\s.*//g')) bundle exec  irb
+}
+kbash() {
+  kuse $1 && kexec $(echo -n $(kpods | grep $2 | head -1 | sed 's/\s.*//g')) bash
+}   
+
+
+eval $(thefuck --alias)
+
+source ~/.gitshrc
+source ~/.zshrc_local

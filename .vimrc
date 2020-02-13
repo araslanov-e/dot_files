@@ -6,6 +6,11 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
+" Include local .vimrc_local
+if filereadable(expand("~/.vimrc_local"))
+  source ~/.vimrc_local
+endif
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
@@ -33,10 +38,19 @@ Bundle 'janko-m/vim-test'
 Bundle 'jwhitley/vim-matchit'
 Bundle 'vim-syntastic/syntastic'
 Bundle 'joker1007/vim-ruby-heredoc-syntax'
+Bundle 'shumphrey/fugitive-gitlab.vim'
+Bundle 'tpope/vim-rhubarb'
+Bundle 'ngmy/vim-rubocop'
 
 " Elixir
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'avdgaag/vim-phoenix'
+
+" JS
+Bundle 'leafgarland/typescript-vim'
+Bundle 'peitalin/vim-jsx-typescript'
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+
 
 " appearance
 syntax on
@@ -79,6 +93,7 @@ nmap <M-Down> <C-w><Down>
 nmap <C-d> mzyyp`z
 nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
+nmap <C-a> :tabonly<CR> :only<CR>
 
 map <D-]> <plug>NERDCommenterToggle
 map <M-]> <plug>NERDCommenterToggle
@@ -90,6 +105,7 @@ set nowritebackup
 set nobackup
 set number
 set relativenumber
+set guifont=Monospace\ 12
 
 " plugin setup
 let g:ctrlp_switch_buffer = ''
@@ -114,6 +130,9 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#222222 ctermbg=darkgr
 
 " Press F4 to toggle highlighting on/off, and show current value.
 :noremap <F4> :set hlsearch! hlsearch?<CR>
+
+" Ctags
+set tags=tags,./tags
 
 function DeleteBlankLines()
 ruby <<EOF
@@ -153,3 +172,4 @@ ruby << EOF
   end
 EOF
 endfunction
+
