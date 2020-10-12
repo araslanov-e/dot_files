@@ -84,19 +84,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 # Tmuxinator
 source ~/.tmuxinator.zsh
 
 # Aliases
 alias ll='ls -alF -color'
 alias xcc='xclip -selection clipboard'
+alias opendir='nautilus'
 
 export EDITOR=vim
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
 
@@ -126,3 +123,13 @@ eval $(thefuck --alias)
 
 source ~/.gitshrc
 source ~/.zshrc_local
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+# asdf
+. $HOME/.asdf/asdf.sh
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# # initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit

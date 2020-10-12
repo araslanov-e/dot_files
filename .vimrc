@@ -41,6 +41,7 @@ Bundle 'joker1007/vim-ruby-heredoc-syntax'
 Bundle 'shumphrey/fugitive-gitlab.vim'
 Bundle 'tpope/vim-rhubarb'
 Bundle 'ngmy/vim-rubocop'
+Bundle 'tommcdo/vim-fubitive'
 
 " Elixir
 Bundle 'elixir-lang/vim-elixir'
@@ -173,3 +174,4 @@ ruby << EOF
 EOF
 endfunction
 
+command Exec set splitright | vnew | set filetype=sh | read !sh #
