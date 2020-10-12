@@ -27,6 +27,7 @@
     $ ln -s ~/.dot_files/.gemrc ~/.gemrc
     $ ln -s ~/.dot_files/.tmux.conf ~/.tmux.conf
     $ ln -s ~/.dot_files/.gitignore_global ~/.gitignore_global
+    $ ln -s ~/.dot_files/.gitshrc ~/.gitshrc
   
 Добавляем в .bash_profile
     
