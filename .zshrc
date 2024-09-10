@@ -85,7 +85,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Tmuxinator
-source ~/.tmuxinator.zsh
+# source ~/.tmuxinator.zsh
+alias mux='tmuxinator'
 
 # Aliases
 alias ll='ls -alF -color'
@@ -98,7 +99,8 @@ export EDITOR=vim
 #eval "$(rbenv init -)"
 
 export PATH=$PATH:/usr/local/go/bin
-source <(kubectl completion zsh)
+# TODO: add kubectl
+# source <(kubectl completion zsh)
 
 # kubectlo
 alias kpods='kubectl get pods'
@@ -118,7 +120,6 @@ kbash() {
   kuse $1 && kexec $(echo -n $(kpods | grep $2 | head -1 | sed 's/\s.*//g')) bash
 }   
 
-
 eval $(thefuck --alias)
 
 source ~/.gitshrc
@@ -127,9 +128,24 @@ source ~/.zshrc_local
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 # asdf
-. $HOME/.asdf/asdf.sh
+if [ -f $HOME/.asdf/asdf.sh ]; then
+  . $HOME/.asdf/asdf.sh
+else
+  . /usr/local/opt/asdf/asdf.sh
+fi
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
 # # initialise completions with ZSH's compinit
 autoload -Uz compinit
 compinit
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# drone
+export DRONE_SERVER=https://ci.citbits.com
+export DRONE_TOKEN=q3LzumdPAmPFLkOGn0BZbYapEoX6MYxg
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
